@@ -1,0 +1,36 @@
+# Conclusiones de la Prueba E2E en "https://www.Demoblaze.com"
+
+Fecha de Prueba: 28/10/2023
+
+## Resumen
+
+Se realizó una prueba E2E para validar el flujo de compra en "https://www.Demoblaze.com". 
+La prueba incluyó agregar dos productos al carrito, visualizar el carrito, completar el formulario de compra y finalizar la compra.
+
+## Resultados
+
+- **Agregar productos al carrito**: La funcionalidad funciona como se espera. Los productos se agregan al carrito sin problemas.
+  
+- **Visualizar el carrito de compras**: Se visualiza correctamente el carrito con los productos añadidos.
+
+- **Completar el formulario de compra**: El formulario acepta la entrada del usuario y no presenta errores al completar los campos solicitados.
+
+- **Finalizar la compra**: Al finalizar, se muestra un mensaje de agradecimiento, lo que indica que la compra se completó exitosamente.
+
+## Puntos a Mejorar
+
+- **Tiempo de espera**: Al agregar un producto al carrito, hay un pequeño retraso antes de que aparezca el mensaje de confirmación. 
+   para solventar esta retraso  se utilizó un interceptor y un alias:
+   cy.intercept()
+   @addProduct1
+   para poder interceptar el llamado de la API que se dispara detras de escena.
+
+
+## Conclusiones Generales
+
+- La página "https://www.Demoblaze.com" maneja adecuadamente el flujo de compra, y los usuarios deberían poder completar sus compras sin problemas significativos.
+  
+
+
+
+Elaborado por : SAID CERVANTES CORREA

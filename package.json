@@ -1,0 +1,22 @@
+{
+  "name": "pruebatecnicae2e",
+  "version": "1.0.0",
+  "description": "PruebaSaid",
+  "main": "index.js",
+  "scripts": {
+    "chrome": "cypress run --spec cypress/e2e/Test/purchaseFlow.spec.cy.js --browser chrome"
+  },
+  "author": "SaidCervantes",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cucumber/cucumber": "^10.0.1",
+    "cucumber": "^6.0.7",
+    "cypress": "^13.3.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "esbuild": "^0.19.5"
+  }
+}
